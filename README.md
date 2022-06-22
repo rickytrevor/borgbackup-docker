@@ -11,6 +11,6 @@ a compatible version on the official repos and, since I also couldn't be bothere
 
 To use the container simply run 
 ```
-docker run -ti -v /the/dir/that/you/want/to/backup:/data -v ~/.ssh:/keys -e user="yourbackupuser" -e ip=yourserveripordomain -e name=nameofbackup -e backuprmt=/the/remote/backup/directory -e mode=client borgtest
+docker run -ti -v /the/dir/that/you/want/to/backup:/data -v ~/.ssh:/keys -e user="yourbackupuser" -e ip=yourserveripordomain -e name=nameofbackup -e backuprmt=/the/remote/backup/directory -e mode=client rickytrevor/borgbackup-docker:latest
 ```
 there are other environment variables that you can customize to your hearth's content, to check what is available just read the Dockerfile's source code, it is only about 20 lines
