@@ -19,4 +19,4 @@ ARG BORG_UNKNOWN_UNENCRYPTED_REPO_ACCESS_IS_OK
 
 
 COPY . /root/
-CMD chmod +x /data/run.sh && /bin/sh /data/run.sh
+CMD chmod +x /root/run.sh && /bin/sh /root/run.sh
